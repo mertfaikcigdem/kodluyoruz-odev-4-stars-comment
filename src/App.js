@@ -1,3 +1,4 @@
+// kullanılacak componentler import ediliyor
 import "./App.css";
 import React, { Component } from "react";
 import AddComment from "./components/AddComment";
