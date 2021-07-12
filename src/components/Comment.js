@@ -1,6 +1,7 @@
+// import işlemi
 import React from "react";
 import ReactStars from "react-rating-stars-component";
-
+// addComment'ten gelen bilgileri html sayfasında belirtilen özelliklerle gösteren fonksiyon
 export default function Comment({ comments, vote }) {
   console.log("vote", vote);
   return (
