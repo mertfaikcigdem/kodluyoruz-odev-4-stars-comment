@@ -1,6 +1,7 @@
+// import işlemi
 import React from "react";
 import ReactStars from "react-rating-stars-component";
-
+// butona tıklandığı zaman yorumu, yıldız puanını yakalayıp ekranda göstericek fonksiyon
 export default function AddComment(props) {
   return (
     <div>
