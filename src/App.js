@@ -9,10 +9,11 @@ class App extends Component {
     commentValue: "",
     vote: 0,
   };
+  // input içinde değişikliği yakalayan fonksiyon
   textChanged = (e) => {
     this.setState({ commentValue: e.target.value });
   };
-
+// validation kontrolü yapan ve  validation'lar sağlanıyorsa state içerisinde commetns array'inde olan veriyi yeni bir array'e pushlayan fonksiyon
   AddComment = () => {
     if (this.state.commentValue.length === 0) {
       alert("Yorum boş olamaz !");
@@ -31,7 +32,7 @@ class App extends Component {
       });
     }
   };
-
+// yıldız oyunu yakalayan fonksiyon
   ratingChanged = (newRating) => {
     const newState = this.state;
     newState.vote = newRating;
@@ -43,6 +44,7 @@ class App extends Component {
 
   render() {
     return (
+      // componentler çağrılıyor
       <div className="App">
         <h2>Yorumlar</h2>
         <Comment comments={this.state.comments} vote={this.state.vote} />
@@ -56,4 +58,5 @@ class App extends Component {
     );
   }
 }
+// export işlemi
 export default App;
